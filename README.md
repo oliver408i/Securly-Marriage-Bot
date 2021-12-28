@@ -24,6 +24,9 @@ Parent + Partner
 ```
 ---------------
 
+## Setup
+For replit, use the button below (bot does not keep it self running. You will need to enable always on)
+[![Run on Repl.it](https://repl.it/badge/github/oliver408i/Securly-Marriage-Bot)](https://repl.it/github/oliver408i/Securly-Marriage-Bot)
 ## The code and stuff
 The entire code is commented so you can easily add stuff. See Bot.py for more info on the comments. Feel free to contact me at `NitrogenDioxide#2553`!
 
