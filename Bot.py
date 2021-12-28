@@ -3,7 +3,6 @@
 #partner = person user married
 
 #SEE database explain.txt for info on how stuff is stored in the database
-
 try: #auto package installer
     #check if pkgs are installed
     import discord
@@ -15,6 +14,19 @@ except:
     os.system("pip install -r requirements.txt")
     import discord
 import os #to get the token
+import sys #to check arguments
+
+try: #see if there is a noWebServer flag
+    if sys.argv[1] == '-noWebServer':
+        print('Keepalive disabled!')
+except IndexError:
+    from threading import Thread #to keep the repl from dying
+    def keepalive(): #             ^^
+        os.system('node keepalive.js')
+    keepAliveThread = Thread(target=keepalive)
+    keepAliveThread.start() #start the thread
+    print('Keepalive started! Make sure to ping it! See README.md for info')
+#now acutally get into running the bot
 from discord.ext import commands
 
 import settings

@@ -28,16 +28,23 @@ Parent + Partner
 ----------
 
 ## Setup
-For replit, use the button below (bot does not keep it self running. You will need to enable always on)     
+For replit, use the button below (see below on how to keep the bot running)     
      
 [![Run on Repl.it](https://repl.it/badge/github/oliver408i/Securly-Marriage-Bot)](https://repl.it/github/oliver408i/Securly-Marriage-Bot)
     
-*NOTE: you will still have to manually add the bot token! See settings.py for more info*
+*NOTE: you will still have to manually add the bot token! See settings.py for more info*   
+
+Keeping the bot running with replit hosting:
+1. Go to uptimerobot.com
+2. Sign up or sign in
+3. Start the bot
+4. Add a monitor with the url in the web view
     
 For self-hosting, see instructions below
 1. If you have git, you can do `git clone https://github.com/oliver408i/Securly-Marriage-Bot` and then use `cd Securly-Marriage-Bot` to navigate into the new directory. If you don't have git, you will have manually download the code, unzip it, and then cd into it    
 2. Add your bot token: you can find info on how to do this in settings.py
-3. Do `python Bot.py`. It should automatically install packages, if it doesn't, do `pip install -r requirements.txt` or `pip3 install -r requirements.txt` if you have pip3
+3. Do `python Bot.py -noWebServer`. It should automatically install packages, if it doesn't, do `pip install -r requirements.txt` or `pip3 install -r requirements.txt` if you have pip3
+4. If you shall want a web server for keepalive (see the replit section), remove the `-noWebServer` flag
 ## The code and stuff
 The entire code is commented so you can easily add stuff. See Bot.py for more info on the comments. Feel free to contact me at `NitrogenDioxide#2553`!
 
