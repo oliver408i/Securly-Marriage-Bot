@@ -1,0 +1,6 @@
+Users in database is stored as "Username#0000"
+In below text, USER is meant to be replaced with the person's username and tag as seen above
+Key name for partner (the person user married): "USERpartner" (also stored in the same format under partner's name)
+Key name for child(ren): "USERchild"
+Key format for child(ren): "USER|/USER|/USER|/" where |/ is the seperator
+Key name for parent: "USERparent" (both parent and child(ren) keys are used to store this)
