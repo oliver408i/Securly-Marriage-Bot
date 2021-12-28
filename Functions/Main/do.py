@@ -7,7 +7,7 @@ class do(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['disown', 'removechildren', 'leavechildren'])
     @commands.guild_only()
     #disown - remove child
     async def do(self, ctx, member: discord.Member = None):

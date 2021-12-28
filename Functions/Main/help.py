@@ -6,7 +6,7 @@ class help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['h', 'plshelp', 'helppls'])
     @commands.guild_only()
     #help command yea
     async def help(self, ctx):

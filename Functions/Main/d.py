@@ -7,7 +7,7 @@ class d(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['leavepartner', 'divorce'])
     @commands.guild_only()
     #D for leaving your partner
     async def d(self, ctx):

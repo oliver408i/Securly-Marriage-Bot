@@ -7,7 +7,7 @@ class ad(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['adopt', 'makechild'])
     @commands.guild_only()
     #COMMAND OF ADOPTION
     async def ad(self, ctx, member: discord.Member = None):

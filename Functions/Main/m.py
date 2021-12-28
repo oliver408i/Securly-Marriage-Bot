@@ -7,7 +7,7 @@ class m(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['makepartner', 'partner', 'marry'])
     @commands.guild_only()
     #command for getting a partner
     async def m(self, ctx, member: discord.Member = None):
