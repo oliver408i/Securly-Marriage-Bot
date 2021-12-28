@@ -4,9 +4,11 @@ A bot inspired by the acutal Marriage Bot
 Bascically it does fake marriages. It is also very fun lol.
 
 ## Commands
-Use ms!help to see everything listed below   
-*Each command has aliases. Each of them has an alias for the full word: ms!ad = ms!adopt. You can find all of the aliases in each command's file*
+
 ----------   
+Use ms!help to see everything listed below   
+*Each command has aliases. Each of them has an alias for the full word: ms!ad = ms!adopt. You can find all of the aliases in each command's file*   
+   
 **COMMANDS**      
 ms!ad <user> - adopt someone     
 ms!m <user> - marry (propose to someone) *partner = the person you married*    
