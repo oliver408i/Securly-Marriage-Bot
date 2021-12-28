@@ -7,7 +7,7 @@ class mp(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['makeparent', 'bechildof'])
     @commands.guild_only()
     #command for makeparent
     async def mp(self, ctx, member: discord.Member = None):

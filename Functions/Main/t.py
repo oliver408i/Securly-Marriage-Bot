@@ -11,7 +11,7 @@ class t(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['tree', 'familytree', 'gettree'])
     @commands.guild_only()
     async def t(self, ctx):
         author = ctx.author

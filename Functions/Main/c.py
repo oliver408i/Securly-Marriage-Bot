@@ -8,7 +8,7 @@ class c(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-    @commands.command()
+    @commands.command(aliases=['clear', 'rm', 'remove', 'killfamily'])
     @commands.guild_only()
     #delete your entire tree :D
     async def c(self, ctx):

@@ -7,7 +7,7 @@ class e(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases=['runaway', 'emancipate', 'leaveparent'])
     @commands.guild_only()
     #Command for removing your parent
     async def e(self, ctx):

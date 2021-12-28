@@ -1,3 +1,4 @@
+Database is used to store relationships
 Users in database is stored as "Username#0000"
 In below text, USER is meant to be replaced with the person's username and tag as seen above
 Key name for partner (the person user married): "USERpartner" (also stored in the same format under partner's name)

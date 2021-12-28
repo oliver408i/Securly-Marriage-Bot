@@ -4,15 +4,17 @@
 
 #SEE database explain.txt for info on how stuff is stored in the database
 
-try:
+try: #auto package installer
+    #check if pkgs are installed
     import discord
+    import pickledb #not used here, but just to check if the pkg is install
 except:
-    #if discord isn't installed just install it all
+    #if something isn't installed just install it all
     import os
     print("Something wasn't installed! Installing now...")
     os.system("pip install -r requirements.txt")
     import discord
-import os
+import os #to get the token
 from discord.ext import commands
 
 import settings
@@ -25,6 +27,7 @@ intents = discord.Intents.all()
 #Main folder if for the marriage stuff
 cogs: list = ["Functions.Main.m", "Functions.Admin.admin", "Functions.Main.d","Functions.Main.t","Functions.Main.ad","Functions.Main.e","Functions.Main.do", "Functions.Main.help", "Functions.Main.mp", "Functions.Main.c"]
 
+#client init...
 client = commands.Bot(command_prefix=settings.Prefix, help_command=None, intents=intents)
 
 
@@ -41,8 +44,8 @@ async def on_ready():
         except Exception as e:
             exc = "{}: {}".format(type(e).__name__, e)
             print("Failed to load cog {}\n{}".format(cog, exc))
-try:
+try: #attempt to get token and run bot
     token = os.environ['BOT_TOKEN']
     client.run(token)
-except:
+except: #key not found
     raise KeyError('Could not find bot token. Did you forget to add the enviroment secret BOT_TOKEN?')
