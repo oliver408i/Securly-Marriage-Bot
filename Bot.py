@@ -12,6 +12,7 @@ except:
     print("Something wasn't installed! Installing now...")
     os.system("pip install -r requirements.txt")
     import discord
+import os
 from discord.ext import commands
 
 import settings
@@ -40,6 +41,8 @@ async def on_ready():
         except Exception as e:
             exc = "{}: {}".format(type(e).__name__, e)
             print("Failed to load cog {}\n{}".format(cog, exc))
-
-
-client.run(settings.TOKEN)
+try:
+    token = os.environ['BOT_TOKEN']
+    client.run(token)
+except:
+    raise KeyError('Could not find bot token. Did you forget to add the enviroment secret BOT_TOKEN?')
