@@ -1,5 +1,5 @@
 # Securly's Marriage Bot
-A bot inspired by the acutal Marriage Bot
+A discord bot inspired by the acutal Marriage Bot
 ## About The Bot
 Bascically it does fake marriages. It is also very fun lol.
 
@@ -40,7 +40,7 @@ Keeping the bot running with replit hosting:
 3. Start the bot
 4. Add a monitor with the url in the web view
     
-For self-hosting, see instructions below
+For self-hosting, see instructions below:   
 1. If you have git, you can do `git clone https://github.com/oliver408i/Securly-Marriage-Bot` and then use `cd Securly-Marriage-Bot` to navigate into the new directory. If you don't have git, you will have manually download the code, unzip it, and then cd into it    
 2. Add your bot token: you can find info on how to do this in settings.py
 3. Do `python Bot.py -noWebServer`. It should automatically install packages, if it doesn't, do `pip install -r requirements.txt` or `pip3 install -r requirements.txt` if you have pip3
