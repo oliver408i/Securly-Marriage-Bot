@@ -5,6 +5,7 @@ Bascically it does fake marriages. It is also very fun lol.
 
 ## Commands
 Use ms!help to see everything listed below   
+*Each command has aliases. Each of them has an alias for the full word: ms!ad = ms!adopt. You can find all of the aliases in each command's file*
 ----------   
 **COMMANDS**      
 ms!ad <user> - adopt someone     
@@ -22,7 +23,7 @@ Parent + Partner
         child of child2    
             ...and so on
 ```
----------------
+----------
 
 ## Setup
 For replit, use the button below (bot does not keep it self running. You will need to enable always on)     
