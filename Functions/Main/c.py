@@ -14,7 +14,7 @@ class c(commands.Cog):
     async def c(self, ctx):
         db = pickledb.load('database.txt', False)
         author = ctx.author.name+"#"+ctx.author.discriminator
-        if not db.exists(author.name+"#"+author.discriminator+"partner") and not db.exists(author.name+"#"+author.discriminator+"child"):
+        if not db.exists(author+"partner") and not db.exists(author+"child"):
             return await ctx.send("You have no family to remove")
         #just to make sure
         question = await ctx.send(f"<@{ctx.author.id}>, are you sure you want to remove ALL (children, parent, partner) of your family members?\nReact with ✅ for yes, don't respond for no.")
