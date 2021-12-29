@@ -3,16 +3,7 @@
 #partner = person user married
 
 #SEE database explain.txt for info on how stuff is stored in the database
-try: #auto package installer
-    #check if pkgs are installed
-    import discord
-    import pickledb #not used here, but just to check if the pkg is install
-except:
-    #if something isn't installed just install it all
-    import os
-    print("Something wasn't installed! Installing now...")
-    os.system("pip install -r requirements.txt")
-    import discord
+import discord
 import os #to get the token
 import sys #to check arguments
 
