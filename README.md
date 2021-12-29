@@ -43,13 +43,15 @@ Keeping the bot running with replit hosting:
 For self-hosting, see instructions below:   
 1. If you have git, you can do `git clone https://github.com/oliver408i/Securly-Marriage-Bot` and then use `cd Securly-Marriage-Bot` to navigate into the new directory. If you don't have git, you will have manually download the code, unzip it, and then cd into it    
 2. Add your bot token: you can find info on how to do this in settings.py
-3. Do `python Bot.py -noWebServer`. It should automatically install packages, if it doesn't, do `pip install -r requirements.txt` or `pip3 install -r requirements.txt` if you have pip3
-4. If you shall want a web server for keepalive (see the replit section), remove the `-noWebServer` flag
+3. Do `python3 -m poetry install` if you don't have the packages installed
+4. Do `python3 Bot.py -noWebServer`
+5. If you shall want a web server for keepalive (see the replit section), remove the `-noWebServer` flag
 ## The code and stuff
 The entire code is commented so you can easily add stuff. See Bot.py for more info on the comments. Feel free to contact me at `NitrogenDioxide#2553`!
 
 ## Credit
 Python modules used:   
+- [Peotry](https://python-poetry.org/) for package installing. You will need this!
 - [PickleDB](https://patx.github.io/pickledb/) for database writing and reading
 - [Dicsord.py](https://discordpy.readthedocs.io/en/latest/) for... you know....
 - sys, io, itertools, etc.
