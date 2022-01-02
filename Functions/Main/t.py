@@ -3,7 +3,7 @@ from discord.ext import commands
 import itertools
 import sys
 import io
-
+import discord
 
 
 class t(commands.Cog):
@@ -13,8 +13,11 @@ class t(commands.Cog):
 
     @commands.command(aliases=['tree', 'familytree', 'gettree'])
     @commands.guild_only()
-    async def t(self, ctx):
-        author = ctx.author
+    async def t(self, ctx, member: discord.Member = None):
+        if member == None:
+            author = ctx.author
+        else:
+            author = member
         db = pickledb.load('database.txt', False)
 
         class Person:
