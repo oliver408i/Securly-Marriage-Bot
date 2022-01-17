@@ -28,7 +28,7 @@ intents = discord.Intents.all()
 #see each command file with comments in Functions/folder/comamnd.py
 #Admins folder is ignored as it isn't used
 #Main folder if for the marriage stuff
-cogs: list = ["Functions.Main.m", "Functions.Admin.admin", "Functions.Main.d","Functions.Main.t","Functions.Main.ad","Functions.Main.e","Functions.Main.do", "Functions.Main.help", "Functions.Main.mp", "Functions.Main.c"]
+cogs: list = ["Functions.Main.m", "Functions.Main.d","Functions.Main.t","Functions.Main.ad","Functions.Main.e","Functions.Main.do", "Functions.Main.help", "Functions.Main.mp", "Functions.Main.c"]
 
 #client init...
 client = commands.Bot(command_prefix=settings.Prefix, help_command=None, intents=intents)
