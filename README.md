@@ -16,7 +16,7 @@ ms!d - remove your partner ~~with utter force~~
 ms!do <child> - remove that child ~~via throwing out the door~~      
 ms!c - removes your entire family     
 ms!e - remove your parent ~~by running away~~     
-**ms!t - show your family tree**     
+**ms!t <user>- show user's family tree or your own is user is blank**     
 Family tree format is:      
 ```
 Parent + Partner

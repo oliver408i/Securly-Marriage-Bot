@@ -47,8 +47,11 @@ async def on_ready():
         except Exception as e:
             exc = "{}: {}".format(type(e).__name__, e)
             print("Failed to load cog {}\n{}".format(cog, exc))
-try: #attempt to get token and run bot
-    token = os.environ['BOT_TOKEN']
-    client.run(token)
-except: #key not found
-    raise KeyError('Could not find bot token. Did you forget to add the enviroment secret BOT_TOKEN?')
+if settings.UseEnviromentalVariable:
+    try: #attempt to get token and run bot
+        token = os.environ['BOT_TOKEN']
+        client.run(token)
+    except: #key not found
+        raise KeyError('Could not find bot token. Did you forget to add the enviroment secret BOT_TOKEN?')
+else:
+    client.run(settings.BotToken)
