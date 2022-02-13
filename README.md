@@ -41,6 +41,7 @@ Keeping the bot running with replit hosting:
 4. Add a monitor with the url in the web view
     
 For self-hosting, see instructions below:   
+*Made with Python 3.8.12, but 3.9 should work*
 1. If you have git, you can do `git clone https://github.com/oliver408i/Securly-Marriage-Bot` and then use `cd Securly-Marriage-Bot` to navigate into the new directory. If you don't have git, you will have manually download the code, unzip it, and then cd into it    
 2. Add your bot token: you can find info on how to do this in settings.py
 3. Do `python3 -m poetry install` if you don't have the packages installed
