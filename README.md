@@ -10,13 +10,13 @@ Use ms!help to see everything listed below
 *Each command has aliases. Each of them has an alias for the full word: ms!ad = ms!adopt. You can find all of the aliases in each command's file*   
    
 **COMMANDS**      
-ms!ad <user> - adopt someone     
-ms!m <user> - marry (propose to someone) *partner = the person you married*    
+ms!ad {user} - adopt someone     
+ms!m {user} - marry (propose to someone) *partner = the person you married*    
 ms!d - remove your partner ~~with utter force~~     
-ms!do <child> - remove that child ~~via throwing out the door~~      
+ms!do {child} - remove that child ~~via throwing out the door~~      
 ms!c - removes your entire family     
 ms!e - remove your parent ~~by running away~~     
-**ms!t <user>- show user's family tree or your own is user is blank**     
+**ms!t {user} - show user's family tree or your own is user is blank**     
 Family tree format is:      
 ```
 Parent + Partner

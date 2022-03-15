@@ -15,9 +15,11 @@ class t(commands.Cog):
     @commands.guild_only()
     async def t(self, ctx, member: discord.Member = None):
         if member == None:
+            noFamilyResponse = "You have no family :("
             author = ctx.author
         else:
             author = member
+            noFamilyResponse = "They have no family :("
         db = pickledb.load('database.txt', False)
 
         class Person: #here we set up a class and some functions to generate the tree at the end
@@ -36,7 +38,7 @@ class t(commands.Cog):
                 member.children = [createTree(child, member, level) for child in d['children']]
                 return member
         if not db.exists(author.name+"#"+author.discriminator+"partner") and not db.exists(author.name+"#"+author.discriminator+"child"):
-            return await ctx.send("You have no family :(")
+            return await ctx.send(noFamilyResponse)
         #so if everything went fine, then start creating the tree
         await ctx.send("Getting data and creating tree...")
         
@@ -80,10 +82,6 @@ class t(commands.Cog):
             
             
             print('\t'*indent, parent.name)
-            # Call your algorithm function.
-            # etc...
-            
-            
             for child in parent.children:
                 printout(child, indent+1)        
         printout(t)
