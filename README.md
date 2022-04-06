@@ -53,7 +53,7 @@ The entire code is commented so you can easily add stuff. See main.py for more i
 ## Credit
 Python modules used:   
 - [PickleDB](https://patx.github.io/pickledb/) for database writing and reading
-- [Dicsord.py](https://discordpy.readthedocs.io/en/latest/) for... you know....
+- [Discord.py](https://discordpy.readthedocs.io/en/latest/) for... you know....
 
 Code from others:  
     
